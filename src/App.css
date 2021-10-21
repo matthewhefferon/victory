@@ -1,7 +1,17 @@
 .App {
   text-align: center;
-  height: 600px;
   color: #333333;
+}
+
+.Donut {
+  padding-top: 5%;
+  text-align: center;
+  height: 500px;
+}
+
+.Bar {
+  text-align: center;
+  height: 500px;
 }
 
 .App-logo {
