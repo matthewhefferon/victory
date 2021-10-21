@@ -1,11 +1,16 @@
 import "./App.css";
-import { VictoryPie, VictoryBar, VictoryTheme, VictoryChart, VictoryLabel} from "victory";
+import {
+  VictoryPie,
+  VictoryBar,
+  VictoryChart,
+  VictoryLabel,
+} from "victory";
 
 function App() {
   return (
     <div className="App">
       <h1>Playing Around with Victory</h1>
-    
+
       {/* Pie */}
       <VictoryPie
         data={[
@@ -29,18 +34,17 @@ function App() {
         }}
       />
       {/* Bar */}
-        <VictoryChart
+      <VictoryChart
         //theme={VictoryTheme.material}
-         domainPadding={20}
-         >
-        <VictoryBar 
-        style={{ data: { fill: "#5778a4" }, labels: {fill: "#333333"} }}
-        categories={{ x: ["Value A", "Value B", "Value C", "Value D"] }}
-        labels={({ datum }) => datum.y}
-        labelComponent={<VictoryLabel dy={-5}/>}
-   
+        domainPadding={20}
+      >
+        <VictoryBar
+          style={{ data: { fill: "#5778a4" }, labels: { fill: "#333333" } }}
+          categories={{ x: ["Value A", "Value B", "Value C", "Value D"] }}
+          labels={({ datum }) => datum.y}
+          labelComponent={<VictoryLabel dy={-5} />}
         />
-        </VictoryChart>
+      </VictoryChart>
     </div>
   );
 }
