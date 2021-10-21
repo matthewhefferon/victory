@@ -30,11 +30,10 @@ function App() {
       />
       {/* Bar */}
         <VictoryChart
-        theme={VictoryTheme.material}
-         domainPadding={10}
+        //theme={VictoryTheme.material}
+         domainPadding={20}
          >
         <VictoryBar 
-        theme={VictoryTheme.material}
         style={{ data: { fill: "#5778a4" }, labels: {fill: "#333333"} }}
         categories={{ x: ["Value A", "Value B", "Value C", "Value D"] }}
         labels={({ datum }) => datum.y}
